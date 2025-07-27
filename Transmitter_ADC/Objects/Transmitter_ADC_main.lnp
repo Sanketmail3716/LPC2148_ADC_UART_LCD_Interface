@@ -1,0 +1,11 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\transmitter_adc_main.o"
+".\objects\adc.o"
+".\objects\lcd_4bit.o"
+".\objects\pll.o"
+".\objects\uart.o"
+--strict --scatter ".\Objects\Transmitter_ADC_main.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Transmitter_ADC_main.map" -o .\Objects\Transmitter_ADC_main.axf

@@ -1,0 +1,10 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\recvie_adc_main.o"
+".\objects\lcd_4bit.o"
+".\objects\pll.o"
+".\objects\uart.o"
+--strict --scatter ".\Objects\Recive_ADC_Main.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Recive_ADC_Main.map" -o .\Objects\Recive_ADC_Main.axf
